@@ -4,7 +4,12 @@ import ProfilePicture from "../../assets/profilePicture.jpg";
 const Chats = () => {
   const hour = new Date().getHours();
   const minute = new Date().getMinutes();
-  const time = `${hour}:${minute}`;
+  const schema = `${hour}:${minute}`;
+
+  const time = new Date().toLocaleTimeString([], {
+    hour: "2-digit",
+    minute: "2-digit",
+  });
 
   type User = {
     id: number;
