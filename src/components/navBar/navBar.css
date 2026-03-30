@@ -1,0 +1,28 @@
+nav {
+  background: var(--principal-color-transparent);
+  margin-top: 1rem;
+  width: 50%;
+  position: fixed;
+  left: 25%;
+  top: 29rem;
+  border: 2px solid transparent;
+  border-radius: 1.5rem;
+  padding: 0.3rem;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+nav a {
+  font-size: 22px;
+  display: flex;
+  color: var(--text-inactif);
+  flex-direction: column;
+  align-items: center;
+}
+
+.active {
+  color: var(--color-white);
+  transition: var(--transition);
+  font-size: 27px;
+}

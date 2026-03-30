@@ -1,0 +1,35 @@
+.logo {
+  font-size: 50px;
+}
+.headerIcons {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: space-between;
+  position: relative;
+  right: 1.5rem;
+}
+.headerIcons a {
+  border: 2px solid transparent;
+  background: transparent;
+  height: 3rem;
+  padding: 0.5rem;
+  border-radius: 1.3rem;
+  font-size: 25px;
+  color: var(--background-color);
+}
+.headerIcons a:hover {
+  background: var(--colorHover);
+  /* font-size: 26px; */
+}
+
+.container {
+  position: fixed;
+  height: 120px;
+  top: 0;
+  background: var(--principal-color);
+  display: flex;
+  justify-content: space-between;
+}
+header {
+  z-index: 1;
+}
