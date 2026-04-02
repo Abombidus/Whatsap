@@ -19,6 +19,9 @@ button:active {
   transform: translateY(5px);
 }
 
+html::-webkit-scrollbar {
+  display: none;
+}
 :root {
   --principal-color: #075e54;
   --principal-color-transparent: rgba(7, 94, 84, 0.8);
@@ -27,20 +30,35 @@ button:active {
   --background-color: #f0f0f0;
   --color-white: #ffffff;
   --text-color: #161515;
+  --text-color-gray: #5f5e5e;
   --text-inactif: #2c2c2cd7;
+  --color-btn: rgb(28 135 212);
 
   --transition: 300ms ease;
 }
 .container {
-  width: 100%;
-  padding: 0.5rem;
+  width: auto;
+  /* padding: 0rem; */
 }
-
+.box {
+  margin-left: 20%;
+  margin-right: 20%;
+}
 body {
   background: var(--background-color);
+  transition: 500ms ease-out;
 }
 a {
   color: var(--background-color);
   font-size: x-large;
   margin: 0.4rem;
 }
+
+/* @media (max-width: 600px) {
+  nav {
+    position: fixed;
+  }
+  .haederStatus {
+    position: fixed;
+  }
+} */

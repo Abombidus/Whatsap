@@ -3,18 +3,18 @@ nav {
   margin-top: 1rem;
   width: 50%;
   position: fixed;
-  left: 25%;
+  left: 24%;
   top: 29rem;
   border: 2px solid transparent;
   border-radius: 1.5rem;
   padding: 0.3rem;
-  font-size: 25px;
+  height: 90px;
   display: flex;
   justify-content: space-around;
   text-align: center;
 }
 nav a {
-  font-size: 22px;
+  font-size: 20px;
   display: flex;
   color: var(--text-inactif);
   flex-direction: column;
@@ -24,5 +24,29 @@ nav a {
 .active {
   color: var(--color-white);
   transition: var(--transition);
-  font-size: 27px;
+  font-size: 23px;
+}
+
+@media (max-width: 600px) {
+  nav {
+    width: fit-content;
+    padding: 0;
+    position: fixed;
+    left: 0rem;
+    border-radius: 0;
+    top: 46.6rem;
+    height: fit-content;
+    padding: 0;
+  }
+  nav a {
+    font-size: 22px;
+    /* display: flex; */
+    /* color: var(--text-inactif); */
+    /* flex-direction: column; */
+    /* align-items: center; */
+  }
+
+  .active {
+    font-size: 24px;
+  }
 }

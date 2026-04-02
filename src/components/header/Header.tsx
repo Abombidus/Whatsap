@@ -6,18 +6,20 @@ const Header = (props: { logo: string }) => {
   return (
     <>
       <header className="container">
-        <h1 className="logo">{props.logo}</h1>
-        <div className="headerIcons">
-          <a href="#">
-            <BsThreeDots />
-          </a>
-          <a href="#">
-            <FaCamera />
-          </a>
+        <div className="headerStatus">
+          <h1 className="logo">{props.logo}</h1>
 
-          <a href="">
-            <FaPlus />
-          </a>
+          <div className="headerIcons">
+            <a href="#">
+              <BsThreeDots />
+            </a>
+            <a href="#">
+              <FaCamera />
+            </a>
+            <a href="">
+              <FaPlus />
+            </a>
+          </div>
         </div>
       </header>
     </>

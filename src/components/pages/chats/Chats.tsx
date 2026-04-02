@@ -1,5 +1,13 @@
 import "./chats.css";
-import ProfilePicture from "../../assets/profilePicture.jpg";
+import ProfilePicture from "../../../assets/profilePicture.jpg";
+import Phone from "../../../assets/Phone.jpg";
+import Header from "../../header/Header";
+import Me from "../../../assets/Me.jpg";
+import Accueil from "../../../assets/Accueil.jpg";
+import Monter from "../../../assets/Monter.JPG";
+import Windows11 from "../../../assets/Windows11.jpg";
+import ChatContent from "./ChatContent";
+import { useNavigate } from "react-router-dom";
 
 const Chats = () => {
   const hour = new Date().getHours();
@@ -10,6 +18,8 @@ const Chats = () => {
     hour: "2-digit",
     minute: "2-digit",
   });
+
+  const navigate = useNavigate();
 
   type User = {
     id: number;
@@ -31,7 +41,7 @@ const Chats = () => {
     {
       id: 2,
       nom: "Jean Paul",
-      picture: ProfilePicture,
+      picture: Me,
       time: time,
       message: `Hey, are you coming 
       are you coming to the party tonightare you coming to the party tonightare you coming to the party tonightare you coming to the party tonightare you coming to the party tonightare you coming to the party tonightare you coming to the party tonightare you coming to the party tonightvare you coming to the party tonightvare you coming to the party tonight
@@ -41,21 +51,21 @@ const Chats = () => {
     {
       id: 3,
       nom: "Sandy Squerelle",
-      picture: ProfilePicture,
+      picture: Monter,
       time: time,
       message: "Hey, are you coming to the party tonight?",
     },
     {
       id: 4,
       nom: "Anie Lisette",
-      picture: ProfilePicture,
+      picture: Monter,
       time: time,
       message: "Hi, I just wanted to check in and see how you're doing.",
     },
     {
       id: 5,
       nom: "Alexis Mbianda",
-      picture: ProfilePicture,
+      picture: Accueil,
       time: time,
       message:
         "Hey, do you want to grab lunch tomorrow? JavaScript is life!    ",
@@ -63,20 +73,22 @@ const Chats = () => {
     {
       id: 6,
       nom: "Annie Mbianda",
-      picture: ProfilePicture,
+      picture: Windows11,
       time: time,
       message:
-        "Hi, I just wanted to check in and see how you're doing. But i know use TypeScript",
+        "Hi, I just wanted to check in and see how you're doing. But i known use TypeScript",
     },
   ];
 
   return (
     <>
+      {/* <Header logo="Chats" /> */}
+
       <div className="box">
         <label>
           <input
             type="search"
-            placeholder="Search or start new chat"
+            placeholder="Search for  a chat...🔍"
             id="searchBar"
           />
         </label>
@@ -88,6 +100,7 @@ const Chats = () => {
                   className="ProfilePic"
                   src={user.picture}
                   alt="Profile Picture"
+                  id="pp"
                 />
                 <p className="profileName">{user.nom}</p>
 

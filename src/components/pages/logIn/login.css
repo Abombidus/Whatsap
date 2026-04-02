@@ -1,0 +1,78 @@
+.login {
+  display: flex;
+  border: 2px solid transparent;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.one {
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  width: 53.5%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+  /* top: 1rem; */
+  justify-content: center;
+  align-items: center;
+  /* background: red; */
+}
+
+.two {
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  width: 46.5%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: green; */
+}
+
+.walogorm {
+  width: 60%;
+  /* display: none; */
+  position: absolute;
+  top: -2rem;
+  left: 1rem;
+}
+.loginText {
+  font-size: 75px;
+  left: 27.5rem;
+  bottom: 8.5rem;
+  position: relative;
+}
+
+.btnConnexion {
+  display: flex;
+  gap: 0.5rem;
+  position: relative;
+  right: 15rem;
+  /* gap: 1.5rem; */
+}
+
+.btnConnexion button {
+  background: var(--color-btn);
+  color: var(--color-white);
+  font-size: large;
+}
+.levelOne {
+  display: flex;
+  gap: 1rem;
+}
+.levelTwo h4 {
+  color: var(--text-color-gray);
+  position: relative;
+}
+h4 {
+  position: relative;
+  top: 7rem;
+  left: 6.5rem;
+}
+
+.phone {
+  position: relative;
+  right: 1.7rem;
+  width: 120%;
+}
